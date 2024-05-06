@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A3E11D02BE62C9100DA256D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E11CF2BE62C9100DA256D /* File.swift */; };
+		2A3E11D22BE632CB00DA256D /* GoogleService-Info-dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E11D12BE632CA00DA256D /* GoogleService-Info-dev.plist */; };
+		2A3E11D42BE6341200DA256D /* GoogleService-Info-prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E11D32BE6341200DA256D /* GoogleService-Info-prod.plist */; };
 		63197CB42A6F98F50020AE44 /* DevOpsPractical7App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63197CB32A6F98F50020AE44 /* DevOpsPractical7App.swift */; };
 		63197CB62A6F98F50020AE44 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63197CB52A6F98F50020AE44 /* ContactListView.swift */; };
 		63197CB82A6F98F60020AE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63197CB72A6F98F60020AE44 /* Assets.xcassets */; };
 		63197CBB2A6F98F60020AE44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63197CBA2A6F98F60020AE44 /* Preview Assets.xcassets */; };
 		63197CCC2A6FBDE30020AE44 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63197CCB2A6FBDE30020AE44 /* ContactModel.swift */; };
 		63197CCE2A6FBE030020AE44 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63197CCD2A6FBE030020AE44 /* ContactListViewModel.swift */; };
-		63197CD02A6FBFD00020AE44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63197CCF2A6FBFD00020AE44 /* GoogleService-Info.plist */; };
 		63197CD32A6FC7AF0020AE44 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 63197CD22A6FC7AF0020AE44 /* FirebaseFirestore */; };
 		63197CD52A6FC7AF0020AE44 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 63197CD42A6FC7AF0020AE44 /* FirebaseFirestoreSwift */; };
 		63197CD72A6FC7AF0020AE44 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 63197CD62A6FC7AF0020AE44 /* FirebaseStorage */; };
@@ -26,7 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A3E11CF2BE62C9100DA256D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		2A3E11D12BE632CA00DA256D /* GoogleService-Info-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-dev.plist"; sourceTree = "<group>"; };
+		2A3E11D32BE6341200DA256D /* GoogleService-Info-prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-prod.plist"; sourceTree = "<group>"; };
 		63197CB02A6F98F50020AE44 /* DevOpsPractical7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevOpsPractical7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63197CB32A6F98F50020AE44 /* DevOpsPractical7App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevOpsPractical7App.swift; sourceTree = "<group>"; };
 		63197CB52A6F98F50020AE44 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		63197CBA2A6F98F60020AE44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63197CCB2A6FBDE30020AE44 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		63197CCD2A6FBE030020AE44 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
-		63197CCF2A6FBFD00020AE44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		63197CDA2A6FCA350020AE44 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		63197CDD2A6FCAAF0020AE44 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		63197CDF2A6FCBA80020AE44 /* AddContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewModel.swift; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				63197CB32A6F98F50020AE44 /* DevOpsPractical7App.swift */,
-				2A3E11CF2BE62C9100DA256D /* File.swift */,
-				63197CCF2A6FBFD00020AE44 /* GoogleService-Info.plist */,
+				2A3E11D32BE6341200DA256D /* GoogleService-Info-prod.plist */,
+				2A3E11D12BE632CA00DA256D /* GoogleService-Info-dev.plist */,
 				63701C582A78BD210078B779 /* Extension */,
 				63197CCA2A6FBDBF0020AE44 /* Views */,
 				63197CB72A6F98F60020AE44 /* Assets.xcassets */,
@@ -207,9 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3E11D42BE6341200DA256D /* GoogleService-Info-prod.plist in Resources */,
 				63197CBB2A6F98F60020AE44 /* Preview Assets.xcassets in Resources */,
 				63197CB82A6F98F60020AE44 /* Assets.xcassets in Resources */,
-				63197CD02A6FBFD00020AE44 /* GoogleService-Info.plist in Resources */,
+				2A3E11D22BE632CB00DA256D /* GoogleService-Info-dev.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +228,6 @@
 				63197CB62A6F98F50020AE44 /* ContactListView.swift in Sources */,
 				63197CDE2A6FCAAF0020AE44 /* AddContactView.swift in Sources */,
 				63197CCC2A6FBDE30020AE44 /* ContactModel.swift in Sources */,
-				2A3E11D02BE62C9100DA256D /* File.swift in Sources */,
 				63197CB42A6F98F50020AE44 /* DevOpsPractical7App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Practical27/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DevOpsPractical7/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -384,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Practical27/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DevOpsPractical7/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
