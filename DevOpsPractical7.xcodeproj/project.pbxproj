@@ -28,6 +28,7 @@
 		2A3E11DC2BE643D900DA256D /* Dev_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev_Debug.xcconfig; sourceTree = "<group>"; };
 		2A3E11DD2BE643E900DA256D /* Prod_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod_Release.xcconfig; sourceTree = "<group>"; };
 		2A3E11DE2BE646D300DA256D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+
 		63197CB02A6F98F50020AE44 /* DevOpsPractical7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevOpsPractical7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63197CB32A6F98F50020AE44 /* DevOpsPractical7App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevOpsPractical7App.swift; sourceTree = "<group>"; };
 		63197CB52A6F98F50020AE44 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
@@ -217,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3E11D42BE6341200DA256D /* GoogleService-Info-prod.plist in Resources */,
 				63197CBB2A6F98F60020AE44 /* Preview Assets.xcassets in Resources */,
 				63197CB82A6F98F60020AE44 /* Assets.xcassets in Resources */,
 			);
