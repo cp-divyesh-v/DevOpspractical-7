@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A3E11D22BE632CB00DA256D /* GoogleService-Info-dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E11D12BE632CA00DA256D /* GoogleService-Info-dev.plist */; };
-		2A3E11D42BE6341200DA256D /* GoogleService-Info-prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E11D32BE6341200DA256D /* GoogleService-Info-prod.plist */; };
+		2A3E11DF2BE646D300DA256D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E11DE2BE646D300DA256D /* AppDelegate.swift */; };
 		63197CB42A6F98F50020AE44 /* DevOpsPractical7App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63197CB32A6F98F50020AE44 /* DevOpsPractical7App.swift */; };
 		63197CB62A6F98F50020AE44 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63197CB52A6F98F50020AE44 /* ContactListView.swift */; };
 		63197CB82A6F98F60020AE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63197CB72A6F98F60020AE44 /* Assets.xcassets */; };
@@ -26,8 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A3E11D12BE632CA00DA256D /* GoogleService-Info-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-dev.plist"; sourceTree = "<group>"; };
-		2A3E11D32BE6341200DA256D /* GoogleService-Info-prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-prod.plist"; sourceTree = "<group>"; };
+		2A3E11DC2BE643D900DA256D /* Dev_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev_Debug.xcconfig; sourceTree = "<group>"; };
+		2A3E11DD2BE643E900DA256D /* Prod_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod_Release.xcconfig; sourceTree = "<group>"; };
+		2A3E11DE2BE646D300DA256D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+
 		63197CB02A6F98F50020AE44 /* DevOpsPractical7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevOpsPractical7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63197CB32A6F98F50020AE44 /* DevOpsPractical7App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevOpsPractical7App.swift; sourceTree = "<group>"; };
 		63197CB52A6F98F50020AE44 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
@@ -56,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A3E11DB2BE643B600DA256D /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E11DC2BE643D900DA256D /* Dev_Debug.xcconfig */,
+				2A3E11DD2BE643E900DA256D /* Prod_Release.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 		63197CA72A6F98F50020AE44 = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +85,9 @@
 		63197CB22A6F98F50020AE44 /* DevOpsPractical7 */ = {
 			isa = PBXGroup;
 			children = (
+				2A3E11DE2BE646D300DA256D /* AppDelegate.swift */,
+				2A3E11DB2BE643B600DA256D /* Configurations */,
 				63197CB32A6F98F50020AE44 /* DevOpsPractical7App.swift */,
-				2A3E11D32BE6341200DA256D /* GoogleService-Info-prod.plist */,
-				2A3E11D12BE632CA00DA256D /* GoogleService-Info-dev.plist */,
 				63701C582A78BD210078B779 /* Extension */,
 				63197CCA2A6FBDBF0020AE44 /* Views */,
 				63197CB72A6F98F60020AE44 /* Assets.xcassets */,
@@ -149,6 +159,7 @@
 				63197CAC2A6F98F50020AE44 /* Sources */,
 				63197CAD2A6F98F50020AE44 /* Frameworks */,
 				63197CAE2A6F98F50020AE44 /* Resources */,
+				2A3E11D92BE6437A00DA256D /* Firebase Configurations */,
 			);
 			buildRules = (
 			);
@@ -210,11 +221,31 @@
 				2A3E11D42BE6341200DA256D /* GoogleService-Info-prod.plist in Resources */,
 				63197CBB2A6F98F60020AE44 /* Preview Assets.xcassets in Resources */,
 				63197CB82A6F98F60020AE44 /* Assets.xcassets in Resources */,
-				2A3E11D22BE632CB00DA256D /* GoogleService-Info-dev.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A3E11D92BE6437A00DA256D /* Firebase Configurations */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase Configurations";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH_TO_GOOGLE_PLISTS=\"${PROJECT_DIR}/DevOpsPractical7\"\n\ncase \"${CONFIGURATION}\" in\n\n   \"Dev_Debug\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n   \"Prod_Release\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-prod.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n    *)\n        ;;\nesac\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63197CAC2A6F98F50020AE44 /* Sources */ = {
@@ -224,6 +255,7 @@
 				63197CE02A6FCBA80020AE44 /* AddContactViewModel.swift in Sources */,
 				63197CDB2A6FCA350020AE44 /* ContactDetailsView.swift in Sources */,
 				63197CCE2A6FBE030020AE44 /* ContactListViewModel.swift in Sources */,
+				2A3E11DF2BE646D300DA256D /* AppDelegate.swift in Sources */,
 				63701C5A2A78BD370078B779 /* Extension+UIImage.swift in Sources */,
 				63197CB62A6F98F50020AE44 /* ContactListView.swift in Sources */,
 				63197CDE2A6FCAAF0020AE44 /* AddContactView.swift in Sources */,
@@ -237,6 +269,7 @@
 /* Begin XCBuildConfiguration section */
 		63197CBC2A6F98F60020AE44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3E11DC2BE643D900DA256D /* Dev_Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -297,6 +330,7 @@
 		};
 		63197CBD2A6F98F60020AE44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3E11DD2BE643E900DA256D /* Prod_Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
