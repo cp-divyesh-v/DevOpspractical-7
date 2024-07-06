@@ -18,11 +18,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 func configureFirebase() {
     var filePath:String!
-#if DEBUG
-    filePath = Bundle.main.path(forResource: "GoogleService-Info-dev", ofType: "plist")!
-#else
-    filePath = Bundle.main.path(forResource: "GoogleService-Info-prod", ofType: "plist")!
-#endif
+    #if DEBUG
+        filePath = Bundle.main.path(forResource: "GoogleService-Info-dev", ofType: "plist")!
+    #else
+        filePath = Bundle.main.path(forResource: "GoogleService-Info-prod", ofType: "plist")!
+    #endif
 
     let options = FirebaseOptions.init(contentsOfFile: filePath)!
     FirebaseApp.configure(options: options)
